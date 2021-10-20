@@ -1,0 +1,78 @@
+@import url(./css/font.css);
+
+*{
+    font-family: IRAN-Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* :root{
+   --primarycolor:rgb(255, 165, 0);
+  --secendcolor: rgb(255, 165, 0); 
+}  */
+::selection{
+    color:orange;
+  }
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.course-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 20px;
+    color: rgb(243, 243, 243);
+}
+body{
+    background-color: rgb(199, 227, 228);
+    direction: rtl;
+    height: 100%;
+    width: 100%;
+}
+.collapse-menu{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+}
+.collapse-panel{
+    border: 1px solid #4b7aa8;
+}
+.collapse-heading{
+    height: 40px;
+    background-color: #70a1ff;
+    padding: 0 15px;
+    line-height: 45px;
+    position: relative;
+}
+.collapse-trigger{
+    color: #fff;
+    overflow: hidden;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+}
+.collapse-controls{
+    position: absolute;
+    left: 12px;
+    top: 0;
+    color: #fff;
+    transition: all .1s linear;
+}
+.open{
+    transform: rotate(180deg);
+    top: -3px;
+}
+.collapse-body{
+    padding: 15px;
+    background-color: #fff;
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+    line-height: 2;
+}
+.collapse-body{
+    display: none;
+}
