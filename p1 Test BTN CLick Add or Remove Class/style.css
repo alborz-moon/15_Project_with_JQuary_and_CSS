@@ -1,0 +1,59 @@
+@import url(./css/font.css);
+
+*{
+    font-family: IRAN-Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* :root{
+   --primarycolor:rgb(255, 165, 0);
+  --secendcolor: rgb(255, 165, 0); 
+}  */
+::selection{
+    color:orange;
+  }
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.course-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 100px;
+    color: #2c2b2b;
+}
+.test1{
+    border: 1px solid rgb(201, 201, 201);
+}
+.test2{
+    background-color: burlywood;
+    border: 1px solid rgb(201, 201, 201);
+}
+.custom-addclass{
+    box-shadow: 1px 1px 1px 10px rgb(223, 223, 223);
+    margin: 0 auto;
+    color: crimson;
+}
+.tcenter1{
+    text-align: center;
+}
+ul.accrodion div{
+    background-color: cyan;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+ul.accrodion li{
+    color: #fff;
+    font-size: 16px;
+    padding: 1px;
+    background-color: #fff;
+}
+ul.accrodion ul{
+    display: none;
+}

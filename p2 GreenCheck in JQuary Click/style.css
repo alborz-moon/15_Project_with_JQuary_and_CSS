@@ -1,0 +1,98 @@
+@import url(./css/font.css);
+
+*{
+    font-family: IRAN-Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* :root{
+   --primarycolor:rgb(255, 165, 0);
+  --secendcolor: rgb(255, 165, 0); 
+}  */
+::selection{
+    color:orange;
+  }
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.course-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 100px;
+    color: #2c2b2b;
+}
+body{
+    background-color: #d8e0e5;
+    font-size: 24px;
+    min-height: 100%;
+}
+.circle-loader{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(0,0,0,.2);
+    margin: 100px;
+    border-left-color: #1e90ff;
+    border-radius: 50%;
+    animation: loader-spin 1.2s infinite linear;
+}
+@keyframes loader-spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.checkmark::after{
+    content: '';
+    opacity: 1;
+    height: 120px;
+    width: 50px;
+    border-right: 3px solid #5cb85c;
+    border-top: 3px solid #5cb85c;
+    position: absolute;
+    transform: rotate(220deg)scaleX(-1);
+    top: 49px;
+    left: 99px;
+    animation: checkmark 800ms ease;
+}
+@keyframes checkmark{
+    0%{
+        opacity: 0;
+        height: 0;
+        width: 0px;
+    }
+    30%{
+        opacity: 1;
+        height: 0;
+        width: 50px;
+    }
+    100%{
+        opacity: 1;
+        height: 120px;
+        width: 50px;
+    }
+}
+.load-complete{
+    animation: none;
+    border-color: #5cb85c;
+    transition: border-color 500ms ease-out;
+}
+.checkmark{
+    display: none;
+}
+.btn{
+    padding: 10px 48px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2ed573;
+    color: #fff;
+}
