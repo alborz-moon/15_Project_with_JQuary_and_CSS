@@ -1,0 +1,118 @@
+@import url(./css/font.css);
+
+*{
+    font-family: IRAN-Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* :root{
+   --primarycolor:rgb(255, 165, 0);
+  --secendcolor: rgb(255, 165, 0); 
+}  */
+::selection{
+    color:orange;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.course-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 20px;
+    color: rgb(243, 243, 243);
+}
+body{
+    background-color: rgb(199, 227, 228);
+    direction: rtl;
+    /* height: 100%;
+    width: 100%; */
+}
+.container{
+    position: relative;
+    padding: 0 50px;
+}
+.icon-close{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: rgb(240, 240, 240);
+    font-size: 70px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+.icon-close:hover{
+    transform: rotate(45deg);
+}
+.search-input{
+    height: 400px;
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    opacity: 0;
+    /* transform: translate(40px,0); */
+    /* pointer-events: none; */
+    transition: all .3s ease-in-out ;
+}
+.search-input .input-search{
+    color: #fff;
+    font-size: 54px;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    font-weight: 200;
+}
+.search-input .input-search::-webkit-input-placeholder{
+    color: #eee;
+}
+.control{
+    cursor: pointer;
+}
+.control .btn-material{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    background-color: #e91e63;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgba(0,0, 0, .3);
+    transition: all .7s cubic-bezier(.4,0,.2,1);
+}
+.control .btn-material:hover{
+    box-shadow: 0 10px 20px rgba(0,0, 0, .3);
+}
+.control .btn-material i{
+    color: #fff;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+.search-active{
+    overflow: hidden;
+}
+.search-active .search-input{
+    opacity: 1;
+}
+.search-active .icon-close{
+    opacity: 1;
+    transform: rotate(-90deg);
+}
+.search-active .control{
+    cursor: default;
+}
+.search-active .control .btn-material{
+    transform: scale(70);
+}
+.search-active .control .btn-material i{
+    opacity: 0;
+}
+.search-active .search-input{
+    margin-right: 20px;
+}

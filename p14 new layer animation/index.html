@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap-rtl.css"> -->
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <title></title>
+</head>
+<body class="">
+    <p class="course-title">پروژه شماره 14 </p>
+    <div class="container">
+      <div class="control">
+        <div class="btn-material">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      <i class="fa fa-times icon-close"></i>
+        <div class="search-input">
+          <input type="text" class="input-search" placeholder="جستوجو" >
+        </div>
+    </div>
+          
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.control').click(function(){
+            $('body').addClass('search-active');
+            $('input-search').focus();
+          });
+          $('.icon-close').click(function(){
+            $('body').removeClass('search-active');
+          });
+        });
+    </script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
