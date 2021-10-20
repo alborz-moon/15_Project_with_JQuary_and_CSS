@@ -1,0 +1,66 @@
+@import url(./css/font.css);
+
+*{
+    font-family: IRAN-Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* :root{
+   --primarycolor:rgb(255, 165, 0);
+  --secendcolor: rgb(255, 165, 0); 
+}  */
+::selection{
+    color:orange;
+  }
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.course-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 100px;
+    color: rgb(243, 243, 243);
+}
+body{
+    background-color: rgb(255, 183, 74);
+    direction: rtl;
+} 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.ratting{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    height: 150px;
+    background-color: #ccc;
+    flex-direction: row-reverse;
+    position: relative;
+}
+ratting-0{
+    filter: grayscale(100%);
+}
+.ratting form > input{
+    display: none;
+}
+.ratting form > label{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url(./img/Star_1.png) ;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 76%;
+    transition: 0.3s ;
+}
