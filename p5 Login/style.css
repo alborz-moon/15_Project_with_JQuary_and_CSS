@@ -1,0 +1,75 @@
+@import url(./css/font.css);
+
+*{
+    font-family: IRAN-Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* :root{
+   --primarycolor:rgb(255, 165, 0);
+  --secendcolor: rgb(255, 165, 0); 
+}  */
+::selection{
+    color:orange;
+  }
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.course-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 100px;
+    color: #dbdbdb;
+}
+body{
+    background-color: #ec6060;
+    min-height: 100%;
+}
+.container{
+    background-color: #fff;
+    max-width: 450px;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, .5);
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+.input-group input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #efefef;
+    outline: 0;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+.custom-btn{
+    background-color: rgb(55, 219, 63);
+    color: honeydew;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 20px;
+    transition: background-color 1s ease-out;
+}
+.custom-btn:hover{
+    background-color: rgb(44, 168, 50);
+}
+.input-group {
+    position: relative;
+}
+.input-group #show-pass{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 1s ease;
+    cursor: pointer;
+}
+.input-group #show-pass:hover{
+    color: #3987fc;
+}
