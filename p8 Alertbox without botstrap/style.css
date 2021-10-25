@@ -1,0 +1,118 @@
+@import url(./css/font.css);
+
+*{
+    font-family: IRAN-Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* :root{
+   --primarycolor:rgb(255, 165, 0);
+  --secendcolor: rgb(255, 165, 0); 
+}  */
+::selection{
+    color:orange;
+  }
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.course-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 100px;
+    color: rgb(243, 243, 243);
+}
+body{
+    background-color: rgb(0, 255, 255);
+     /* direction: rtl;  */
+} 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.toast{
+    text-align: right;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    min-width: 470px;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, .2);
+}
+.toast::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    background-color: green;
+}
+.toast .toast-icon{
+    position: absolute;
+    top: 45%;
+    right: 22px;
+    width: 14px;
+    height: 14px;
+    padding: 7px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 50%;
+}
+.toast-type{
+    color: #3e3e3e;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.toast-message{
+    color: #878787;
+    font-size: 14px;
+}
+.toast-content{
+    padding: 0 60px;
+}
+.toast-close{
+    position: absolute;
+    left: 22px;
+    top: 32px;
+    cursor: pointer;
+    color: #d1d1d1;
+    font-size: 20px;
+    transition: color .6s linear;
+}
+.toast-close:hover{
+    color: rgb(231, 74, 74);
+}
+.toast-close:active{
+    color: rgb(160, 49, 49);
+}
+.toast-green .toast-icon{
+    background-color: #2bde3f;
+}
+.toast-green::before{
+    background-color: #2bde3f;
+}
+.toast-blue .toast-icon{
+    background-color: #1d72f3;
+}
+.toast-blue::before{
+    background-color: #1d72f3;
+}
+.toast-yellow .toast-icon{
+    background-color: #ffc007;
+}
+.toast-yellow::before{
+    background-color: #ffc007;
+}
